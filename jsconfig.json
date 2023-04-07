@@ -1,6 +1,10 @@
 {
-	"extends": "./.svelte-kit/tsconfig.json",
 	"compilerOptions": {
+		"importsNotUsedAsValues": "error",
+		"isolatedModules": true,
+		"preserveValueImports": true,
+		"lib": ["esnext", "DOM", "DOM.Iterable"],
+		"target": "esnext",
 		"allowJs": true,
 		"checkJs": true,
 		"esModuleInterop": true,
